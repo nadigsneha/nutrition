@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity3">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME..!"
+        android:textAlignment="center"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="10sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue"
+        android:textAlignment="center"
+        android:textColor="#FF5733"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="20sp"
+        />
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/transformation1"
+        />
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:src="@drawable/lineb"
+        android:contentDescription="App Logo"
+        />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="Email"
+        android:padding="8dp"
+        android:textSize="20sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="20sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0sp"
+
+        android:width="100dp"
+
+        android:backgroundTint="#FF5733"
+        android:onClick="loginButtonClicked"
+        android:text="LOGIN"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotpass"
+
+        android:textSize="12sp"
+        android:text="Forgot password?"
+        android:textColor="#0000FF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/leftLine"
+            android:layout_width="120sp"
+            android:layout_height="1dp"
+            android:background="#800000"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/textView"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textColor="#800000"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            />
+
+        <View
+            android:id="@+id/rightLine"
+            android:layout_width="120sp"
+            android:layout_height="1dp"
+            android:background="#800000"
+
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/textView"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/others"
+        android:layout_above="@id/socialicons"
+        android:text="Social media login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:textColor="#FFA500"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/socialicons"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <!-- Add your logo and other content here -->
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="18dp"
+            android:layout_margin="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/google"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="18dp"
+            android:layout_margin="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/fb"/>
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="18dp"
+            android:layout_margin="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/twitter"/>
+
+        <!-- Add more social media icons if needed -->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="87dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor=" #0000FF"
+            android:id="@+id/signup"
+            android:layout_marginTop="30dp"
+            android:onClick="navigateToSignupPage"
+            android:layout_marginLeft="0dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

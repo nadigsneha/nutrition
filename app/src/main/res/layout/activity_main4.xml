@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".MainActivity4">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME..!"
+        android:textAlignment="center"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="10sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up to set your account"
+        android:textAlignment="center"
+        android:textColor="#FF5733"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/letno"
+        />
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="Name"
+        android:padding="4dp"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="Village"
+        android:padding="4dp"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="State"
+        android:padding="4dp"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="District"
+        android:padding="4dp"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="Total number of students"
+        android:padding="4dp"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="Name of the principal"
+        android:padding="4dp"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="Contact no of principal"
+        android:padding="4dp"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="Name of Annapurna POC"
+        android:padding="4dp"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/fpass"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:padding="4dp"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/fcpass"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="4dp"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:onClick="signup"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:backgroundTint="#FF5733"
+        android:text="Register" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="100dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signin"
+            android:textColor=" #0000FF"
+            android:id="@+id/signup"
+            android:layout_marginTop="30dp"
+            android:onClick="signin"
+            android:layout_marginLeft="0dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="0dp"
+    tools:context=".MainActivity">
+
+    <!-- First ImageView -->
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="330dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo1" />
+
+    <!-- Second ImageView -->
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/lineb"
+        android:layout_marginBottom="100dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextview"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:onClick="nextButtonClicked"
+      android:layout_marginRight="0dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#FF5733"
+        android:text="Next" />
+
+</LinearLayout>
